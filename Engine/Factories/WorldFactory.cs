@@ -7,9 +7,9 @@ using Engine.Models; //this is added as factory doesnot know about the model and
 
 namespace Engine.Factories
 {
-    internal class WorldFactory
+    internal static class WorldFactory
     {
-        internal World CreateWorld()
+        internal static World CreateWorld()
         {
             World newWorld = new World();
             newWorld.AddLocation(-2, -1, "Farmer's Field", 
@@ -41,7 +41,6 @@ namespace Engine.Factories
             return newWorld;
 
 
-            return newWorld;
         }
     }
 }
