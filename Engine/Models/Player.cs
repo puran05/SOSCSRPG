@@ -22,7 +22,7 @@ namespace Engine.Models
             set
             {
                 _name = value;
-                OnPropertyChanged(nameof(Name);
+                OnPropertyChanged(nameof(Name));
             }
         }
         public string CharacterClass {
