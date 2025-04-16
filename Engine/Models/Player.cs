@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Engine.Models
 {
     //adding the class and the properties inside it public makes it visible everywhere in the solution 
-    public class Player :INotifyPropertyChanged
+    public class Player :BaseNotificationClass
        
     {
         private string _name; 
@@ -66,12 +66,8 @@ namespace Engine.Models
                 OnPropertyChanged(nameof(Gold));
             }
         }
-        public event PropertyChangedEventHandler PropertyChanged;
 
-        protected virtual void OnPropertyChanged (string propertyName)
-        {
-            PropertyChanged?.Invoke (this, new PropertyChangedEventArgs (propertyName));
-        }
+        
 
     }
 }
