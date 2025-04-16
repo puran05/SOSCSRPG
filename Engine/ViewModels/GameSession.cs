@@ -60,6 +60,8 @@ namespace Engine.ViewModels
          
             CurrentLocation = CurrentWorld.LocationAt(0, 0);
 
+           
+
         }
 
         public void MoveNorth()
